@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  --main-bg: #247ba0;
+  --sec-main-bg: #f3ffe1;
+
+  --text-color: #e2e2e2;
+  --one: #ffd7d5;
+  --heading-color: #0a2463;
+  --heading-bg: #0a2463;
+  --strip-bg: #247ba0;
+  --form-bg:  
+
+
+;
+}
+
+/* Following the Mobile First Approach */
+
+html {
+  font-size: 62.5%; /* For Standardization */
+  font-family: "Inter";
+}
+body {
+  /* background-color: blue; */
+
+  background-color: var(--main-bg);
+}
+
+h1 {
+  color: var(--text-color);
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  padding: 1rem 2rem;
+  background-color: var(--heading-bg);
+  /* color: var(--text-color) */
+}
+
+.action-header {
+  width: 100%;
+  height: 70px;
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* align-items: center; */
+  /* background-color:var(--heading-bg); */
+}
+
+header h1 {
+  margin: 1rem auto;
+  width: fit-content;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* background-color: aqua; */
+  padding: 1rem 2rem;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  /* gap: rem; */
+  min-width: 320px;
+  max-width: 700px;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  /* max-width: 400px; */
+  gap: 2rem;
+  padding: 1rem 3rem;
+  background: linear-gradient(
+    90deg,
+    #0a2463,
+    #e2e2e2,
+    #e2e2e2,
+    #e2e2e2,
+    #e2e2e2,
+    #e2e2e2,
+    #e2e2e2,
+    #e2e2e2,
+    #e2e2e2,
+    #e2e2e2,
+    #e2e2e2,
+    #e2e2e2,
+    #0a2463
+  );
+  border-radius: 1.8rem;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+form label {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #0a2463;
+}
+
+input {
+  padding: 0.8rem 1rem;
+  border-radius: 0.4rem;
+  outline-color: #fb3640;
+  outline-width: 0.1rem;
+  color: #0a2463;
+  border: 2px solid #247ba0;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  background-color: transparent;
+}
+
+input::placeholder {
+  color: #247ba0;
+  font-size: 1.3rem;
+}
+
+/* Student List Section */
+
+.student-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.heading-text {
+  color: var(--heading-color);
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  margin: 1.6rem auto;
+  width: fit-content;
+}
+
+.heading-text-main {
+  color: #fb3640;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  margin: 0rem auto;
+
+  width: fit-content;
+}
+
+.col-heading {
+  display: none;
+  justify-content: space-between;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.student-strip-portrait {
+  display: flex;
+  flex-direction: column;
+  /* grid-template-columns: repeat(5,1fr); */
+  /* font-size: 1.6rem; */
+  border: 1px solid #e2e2e2;
+  /* width: 100%; */
+  min-width: 300px;
+  flex-wrap: nowrap;
+  gap: 1.6rem;
+  background-color: var(--strip-bg);
+  border-radius: 0.5rem;
+  padding: 1rem 1.6rem;
+}
+
+.st-item .label {
+  /* width: 100%; */
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: var(--text-color);
+  font-family: "Inter", "sans-serif";
+}
+
+.std-name {
+  min-width: 100px;
+}
+
+.std-id {
+  min-width: 100px;
+}
+
+.std-mail {
+  min-width: 100px;
+}
+
+.std-mobile {
+  min-width: 100px;
+}
+
+.col-style {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: var(--text-color);
+  font-family: "Inter", "sans-serif";
+}
+
+.btn1 {
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  border: 2px solid #0a2463;
+  background-color: #e2e2e2;
+  color: #0a2463;
+  font-weight: bolder;
+}
+
+.btn1:hover {
+  background-color: #ffd7d5;
+}
+
+/* .update_message {
+    display: none ;
+}
+
+.update-form-sec {
+    display: none ;
+} */
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .student-strip-portrait {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: fit-content;
+  }
+
+  .container {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .col-heading {
+    display: flex;
+  }
+  .student-strip-portrait {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: fit-content;
+  }
+
+  .st-item .label {
+    display: none;
+  }
+
+  .container {
+    flex-direction: row;
+  }
+}

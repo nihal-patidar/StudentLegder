@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="desc"
+      content="This is the simple and effient Student Registration System"
+    />
+    <meta name="author" content="Nihal Patidar" />
+    <title>Student Desk</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+        <h1 class="heading-text-main">Student Registration System</h1>
+    </header>
+    <div class="action-header">
+
+        <button id="do_active_create_student" class="btn1">New Student</button>
+        <h2 class="">Student List</h2>
+        <button id="do_active_update_student" class="btn1">Update Student</button>
+
+    </div>
+
+    <div class="container">
+      <div class="form-section create_form_sec">
+        <h2 class="heading-text">Create New Student</h2>
+
+        <form id="create-form">
+          <div class="field">
+            <label for="student_name">Full Name</label>
+            <input
+              type="text"
+              id="student_name"
+              name="Name"
+              placeholder="Enter your Full Name"
+            />
+          </div>
+
+          <div class="field">
+            <label for="student_id">Student ID</label>
+            <input
+              type="text"
+              id="student_id"
+              name="Student_ID"
+              placeholder="Enter Student ID"
+            />
+          </div>
+
+          <div class="field">
+            <label for="student_email">Student Email</label>
+            <input
+              type="email"
+              id="student_email"
+              name="Email"
+              placeholder="Enter Student Email"
+            />
+          </div>
+
+          <div class="field">
+            <label for="student_mobile">Mobile Number</label>
+            <input
+              type="tel"
+              id="student_mobile"
+              name="Mobile"
+              placeholder="Enter Student Mobile Number"
+            />
+          </div>
+
+          <button class="btn1" id="add_student_btn">Add Student</button>
+        </form>
+      </div>
+      <div class="student-section">
+        <h2 class="heading-text">Student List</h2>
+        <div class="list" id="studentList">
+          <div class="col-heading">
+            <span class="std-name col-style">Name</span>
+            <span class="std-id col-style">Std Id</span>
+            <span class="std-name col-style">Email</span>
+            <span class="std-name col-style">Mobile</span>
+            <span class="std-name col-style">Actions</span>
+          </div>
+          <!-- <div class="student-strip-portrait">
+            <div class="std-name st-item">
+              <span class="label">Name : </span>
+              <span class="col-style">Nihal Patidar</span>
+            </div>
+            <div class="std-id st-item">
+              <span class="label">Std Id  : </span>
+              <span class="col-style">0201IT221070</span>
+            </div>
+            <div class="std-mail st-item">
+              <span class="label">Email : </span>
+              <span class="col-style">nihalpatidar14@gmail.com</span>
+            </div>
+            <div class="std-mobile st-item">
+              <span class="label">Mobile : </span>
+              <span class="col-style">9009680868</span>
+            </div>
+            <span class="btns">
+              <button class="btn1" id="edit_student">
+                 <i class="fa-solid fa-pen-to-square"></i>
+              </button>
+
+              <button class="btn1" id="delete_student"><i class="fa-solid fa-x"></i></button>
+            </span>
+          </div> -->
+        </div>
+      </div>
+
+      <div class="form-section update_form_sec hidden">
+        <h2 class="heading-text">Update Student</h2>
+        <form id="update-form">
+          <div class="field">
+            <label for="update_student_name">Full Name</label>
+            <input
+              type="text"
+              id="update_student_name"
+              name="Name"
+              placeholder="Enter your Full Name"
+            />
+          </div>
+
+          <div class="field">
+            <label for="update_student_id">Student ID</label>
+            <input
+              type="text"
+              id="update_student_id"
+              name="Student_ID"
+              placeholder="Enter Student ID"
+            />
+          </div>
+
+          <div class="field">
+            <label for="update_student_email">Student Email</label>
+            <input
+              type="email"
+              id="update_student_email"
+              name="Email"
+              placeholder="Enter Student Email"
+            />
+          </div>
+
+          <div class="field">
+            <label for="update_student_mobile">Mobile Number</label>
+            <input
+              type="tel"
+              id="update_student_mobile"
+              name="Mobile"
+              placeholder="Enter Student Mobile Number"
+            />
+          </div>
+
+          <button class="btn1" id="update_student_btn">
+            Update Student
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="utilityfunction.js"></script>
+    <script src="getStudents.js"></script>
+    <script src="addStudent.js"></script>
+    <script src="students.js"></script>
+    <script src="editStudent.js"></script>
+    <script src="toggle.js"></script>
+    <script src="addScrollBar.js"></script>
+  </body>
+</html>
