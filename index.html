@@ -8,6 +8,7 @@
       content="This is the simple and effient Student Registration System"
     />
     <meta name="author" content="Nihal Patidar" />
+    <link rel="icon" href="image/logo-2.jpg" />
     <title>Student Desk</title>
     <link rel="stylesheet" href="index.css" />
     <link
@@ -21,14 +22,12 @@
   </head>
   <body>
     <header>
-        <h1 class="heading-text-main">Student Registration System</h1>
+      <h1 class="heading-text-main">StudentLedger</h1>
     </header>
     <div class="action-header">
-
-        <button id="do_active_create_student" class="btn1">New Student</button>
-        <h2 class="">Student List</h2>
-        <button id="do_active_update_student" class="btn1">Update Student</button>
-
+      <button id="do_active_create_student" class="btn1">New Student</button>
+      <h2 class="">Student List</h2>
+      <button id="do_active_update_student" class="btn1">Update Student</button>
     </div>
 
     <div class="container">
@@ -83,37 +82,13 @@
         <h2 class="heading-text">Student List</h2>
         <div class="list" id="studentList">
           <div class="col-heading">
-            <span class="std-name col-style">Name</span>
-            <span class="std-id col-style">Std Id</span>
-            <span class="std-name col-style">Email</span>
-            <span class="std-name col-style">Mobile</span>
-            <span class="std-name col-style">Actions</span>
+            <span class="std-name ">Name</span>
+            <span class="std-id ">Std Id</span>
+            <span class="std-mail ">Email</span>
+            <span class="std-mobile ">Mobile</span>
+            <span class="btns ">Actions</span>
           </div>
-          <!-- <div class="student-strip-portrait">
-            <div class="std-name st-item">
-              <span class="label">Name : </span>
-              <span class="col-style">Nihal Patidar</span>
-            </div>
-            <div class="std-id st-item">
-              <span class="label">Std Id  : </span>
-              <span class="col-style">0201IT221070</span>
-            </div>
-            <div class="std-mail st-item">
-              <span class="label">Email : </span>
-              <span class="col-style">nihalpatidar14@gmail.com</span>
-            </div>
-            <div class="std-mobile st-item">
-              <span class="label">Mobile : </span>
-              <span class="col-style">9009680868</span>
-            </div>
-            <span class="btns">
-              <button class="btn1" id="edit_student">
-                 <i class="fa-solid fa-pen-to-square"></i>
-              </button>
-
-              <button class="btn1" id="delete_student"><i class="fa-solid fa-x"></i></button>
-            </span>
-          </div> -->
+ 
         </div>
       </div>
 
@@ -160,12 +135,65 @@
             />
           </div>
 
-          <button class="btn1" id="update_student_btn">
-            Update Student
-          </button>
+          <button class="btn1" id="update_student_btn">Update Student</button>
         </form>
       </div>
     </div>
+
+    <!-- ================= Description Section ================= -->
+    <!-- ================= Modern Description Section ================= -->
+    <section class="description-section">
+      <h1 class="heading-text"> About </h1>
+      <div class="desc-wrapper">
+        <div class="desc-card">
+          <h2>📘 Student Ledger</h2>
+          <p>
+            Student Ledger is a simple and user-friendly student registration
+            system designed to manage student records efficiently. It allows
+            users to add, update, and remove student details in an organized
+            format.
+          </p>
+        </div>
+
+        <div class="desc-card">
+          <h3>🚀 Key Features</h3>
+          <ul>
+            <li>Add new students quickly</li>
+            <li>Update existing student details</li>
+            <li>Delete students instantly</li>
+            <li>Dynamic student list rendering</li>
+            <li>Clean and interactive interface</li>
+            <li>Responsive for all devices</li>
+          </ul>
+        </div>
+
+        <div class="desc-card">
+          <h3>🛠 How to Use</h3>
+
+          <div class="instruction">
+            <h4>➕ Add Student</h4>
+            <p>
+              Fill in student details and click <strong>Add Student</strong>.
+            </p>
+          </div>
+
+          <div class="instruction">
+            <h4>✏ Update Student</h4>
+            <p>
+              Click <strong>Edit</strong>, modify details, then click
+              <strong>Update</strong>.
+            </p>
+          </div>
+
+          <div class="instruction">
+            <h4>❌ Remove Student</h4>
+            <p>
+              Click the <strong>Cross (X)</strong> button to delete a student.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="utilityfunction.js"></script>
     <script src="getStudents.js"></script>
