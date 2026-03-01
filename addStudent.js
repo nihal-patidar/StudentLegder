@@ -1,9 +1,12 @@
-const addStudent = function () {
+const addStudent = function () { // It creates New student 
+  // getting the value from the input field of create student form.
   let name = document.getElementById("student_name").value;
   let id = document.getElementById("student_id").value;
   let email = document.getElementById("student_email").value;
   let mobile = document.getElementById("student_mobile").value;
 
+
+  // Name , Id , Email , Mobile Number validations.
   if(name == ""){
     alert("Please Enter Name of Student");
     document.getElementById("student_name").focus();  // for focus on invalid field

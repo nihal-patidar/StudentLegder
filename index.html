@@ -9,7 +9,7 @@
     />
     <meta name="author" content="Nihal Patidar" />
     <link rel="icon" href="image/logo-2.jpg" />
-    <title>Student Desk</title>
+    <title>StudentLedger</title>
     <link rel="stylesheet" href="index.css" />
     <link
       rel="stylesheet"
@@ -21,6 +21,9 @@
     />
   </head>
   <body>
+
+    <!-- This is header part shows the heading and buttons to toggle the create
+     New student and update an Existing student -->
     <header>
       <h1 class="heading-text-main">StudentLedger</h1>
     </header>
@@ -31,6 +34,8 @@
     </div>
 
     <div class="container">
+
+      <!-- This is Create New Student Form Section to new student to the Record -->
       <div class="form-section create_form_sec">
         <h2 class="heading-text">Create New Student</h2>
 
@@ -80,7 +85,7 @@
       </div>
       <div class="student-section">
         <h2 class="heading-text">Student List</h2>
-        <div class="list" id="studentList">
+        <div class="list" id="studentList"> <!-- It is a heading row to guide the below student Row-->
           <div class="col-heading">
             <span class="std-name ">Name</span>
             <span class="std-id ">Std Id</span>
@@ -88,11 +93,15 @@
             <span class="std-mobile ">Mobile</span>
             <span class="btns ">Actions</span>
           </div>
+
+          <!-- This Student Section looks Empty but after adding student, The 
+           student row will be appear here. -->
  
         </div>
       </div>
 
-      <div class="form-section update_form_sec hidden">
+
+      <div class="form-section update_form_sec hidden"> <!-- It is Update Existing Student Form-->
         <h2 class="heading-text">Update Student</h2>
         <form id="update-form">
           <div class="field">
@@ -140,8 +149,7 @@
       </div>
     </div>
 
-    <!-- ================= Description Section ================= -->
-    <!-- ================= Modern Description Section ================= -->
+    <!-- Below Section gives information about the system and how to use guidelines -->
     <section class="description-section">
       <h1 class="heading-text"> About </h1>
       <div class="desc-wrapper">
@@ -195,12 +203,13 @@
       </div>
     </section>
 
-    <script src="utilityfunction.js"></script>
-    <script src="getStudents.js"></script>
-    <script src="addStudent.js"></script>
-    <script src="students.js"></script>
-    <script src="editStudent.js"></script>
-    <script src="toggle.js"></script>
-    <script src="addScrollBar.js"></script>
+    <!-- These are js files which are include to make website dynamic and working. -->
+    <script src="utilityfunction.js"></script> <!-- It has utility function which are used repeatedly-->
+    <script src="getStudents.js"></script> <!-- It take the student list from LocalStorage and render them-->
+    <script src="addStudent.js"></script> <!-- It consists functions like Add Student-->
+    <script src="students.js"></script> <!-- It initializes global students variable to hold student list-->
+    <script src="editStudent.js"></script> <!-- It comprises Edit and Delete function. -->
+    <script src="toggle.js"></script> <!-- It consist of functionalities to add and remove forms. -->
+    <script src="addScrollBar.js"></script> <!-- It add scroll Functionalities using JavaScript-->
   </body>
 </html>

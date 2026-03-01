@@ -1,8 +1,8 @@
-let students = getStudents();
+let students = getStudents(); // gets the students list from Local Storage.
 
 if(!students){
     students = [];
-    setStudents(students);
+    setStudents(students); // storing the students list to Local Storage.
 }
 
 // this is utility function to avoid rewriting the same code and avoid same error facing.
@@ -12,12 +12,13 @@ function getStudents() {
 
 // this is utility function to setStudents 
 function setStudents(data){
-    return localStorage.setItem("students",JSON.stringify(data));
+    return localStorage.setItem("students",JSON.stringify(data)); // local Storage value must be string.
 }
 
 
 
-function createStudentElement(student){
+function createStudentElement(student){ // this function create and element and insert the element to 
+  // Student List.
 
     let newStudent = `
         <div class="student-strip-portrait" id="st-${student.id}">
