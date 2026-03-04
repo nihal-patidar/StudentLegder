@@ -391,6 +391,7 @@ input::placeholder {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 25px;
   /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
 }

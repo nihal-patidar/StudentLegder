@@ -57,7 +57,7 @@ function updateStudent() {
     return;
   }
 
-  if (mobile.length >= 10) { // Mobile Number should contain at least 10 digit as per asked.
+  if (mobile.length != 10) { // Mobile Number should contain at least 10 digit as per asked.
     alert("Please Enter valid Mobile Number");
     document.getElementById("update_student_mobile").focus();
     return;
